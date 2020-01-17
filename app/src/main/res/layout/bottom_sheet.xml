@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="56dp"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+   <RelativeLayout
+
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       >
+       <RelativeLayout
+           android:background="@color/textcolor"
+           android:id="@+id/rl_sticky"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:alpha=".4">
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               />
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:text="Pull"
+               android:textSize="25dp" />
+       </RelativeLayout>
+       <RelativeLayout
+           android:padding="10dp"
+           android:layout_marginTop="10dp"
+           android:layout_below="@id/rl_sticky"
+           android:id="@+id/rl_free"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           >
+           <TextView
+               android:textSize="20dp"
+               android:layout_marginTop="15dp"
+               android:gravity="center"
+               android:layout_marginLeft="20dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Free Asstes"
+               />
+           <ImageView
+               android:layout_toLeftOf="@id/list_free"
+               android:id="@+id/iv_scan_free"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/ic_qr_code"
+               />
+           <ImageView
+               android:layout_marginLeft="20dp"
+               android:id="@+id/list_free"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignParentRight="true"
+               android:src="@drawable/ic_list"
+               />
+       </RelativeLayout>
+       <RelativeLayout
+           android:padding="10dp"
+           android:layout_marginTop="10dp"
+           android:layout_below="@id/rl_free"
+           android:id="@+id/rl_damage"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           >
+           <TextView
+               android:textSize="20dp"
+               android:layout_marginTop="15dp"
+               android:layout_marginLeft="20dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Damage Asstes"
+               />
+           <ImageView
+               android:layout_toLeftOf="@id/list_damage"
+               android:id="@+id/iv_scan_damage"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/ic_qr_code"
+               />
+           <ImageView
+               android:layout_marginLeft="20dp"
+               android:id="@+id/list_damage"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignParentRight="true"
+               android:src="@drawable/ic_list"
+               />
+       </RelativeLayout>
+   </RelativeLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="@dimen/_2sdp"
+    android:layout_marginBottom="@dimen/_2sdp"
+    android:layout_marginRight="5dp"
+    card_view:cardCornerRadius="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profileImage"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            app:civ_border_color="@color/colorPrimaryDark"
+            android:src="@drawable/user"/>
+
+        <TextView
+            android:id="@+id/employee_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/qr_code"
+            android:layout_toRightOf="@+id/profileImage"
+            android:text="Large Text"
+            android:textSize="@dimen/_15ssp"/>
+
+        <TextView
+            android:id="@+id/designation"
+            android:layout_toLeftOf="@id/qr_code"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/employee_name"
+            android:layout_toRightOf="@+id/profileImage"
+            android:text="Small Text"
+            android:textSize="@dimen/_10ssp"
+            />
+        <ImageView
+            android:layout_margin="@dimen/_5sdp"
+            android:id="@+id/qr_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/listing"
+            android:src="@drawable/ic_qr_code"/>
+        <ImageView
+            android:layout_margin="@dimen/_5sdp"
+            android:id="@+id/listing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_list"/>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

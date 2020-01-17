@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="2dp"
+        android:elevation="20dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        >
+        <LinearLayout
+            android:background="@color/wallet_highlighted_text_holo_dark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:id="@+id/profile_img"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/ic_edit_tool"/>
+
+                <LinearLayout
+                    android:layout_toRightOf="@id/profile_img"
+                    android:id="@+id/lin"
+                    android:padding="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_marginRight="5dp"
+                            android:id="@+id/acess"
+                            android:layout_width="15dp"
+                            android:layout_height="wrap_content"
+                            />
+                        <TextView
+                            android:id="@+id/assets_name"
+                            android:layout_toRightOf="@+id/acess"
+                            android:gravity="center_vertical"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorPrimary"
+                            android:text="Mousumi Majumdar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:textSize="13sp"/>
+
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp">
+                        <ImageView
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:id="@+id/phone"
+                            android:layout_width="15dp"
+                            android:layout_height="@dimen/_25sdp"
+                            />
+
+                        <TextView
+                            android:id="@+id/assets_id"
+                            android:layout_toRightOf="@+id/phone"
+                            android:gravity="center_vertical"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/_11ssp"
+                            android:textColor="@color/colorPrimary"
+                            android:text="Designation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_25sdp" />
+                    </RelativeLayout>
+
+
+
+                </LinearLayout>
+
+
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>
